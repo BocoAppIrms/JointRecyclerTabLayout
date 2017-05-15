@@ -1,9 +1,5 @@
 package com.nshmura.recyclertablayout.demo.imitationloop;
 
-import com.nshmura.recyclertablayout.RecyclerTabLayout;
-import com.nshmura.recyclertablayout.demo.Demo;
-import com.nshmura.recyclertablayout.demo.R;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +7,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import com.handy.tablayout.RecyclerTabLayout;
+import com.nshmura.recyclertablayout.demo.Demo;
+import com.nshmura.recyclertablayout.demo.R;
 
 import java.util.ArrayList;
 

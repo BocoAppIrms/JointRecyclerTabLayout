@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.nshmura.recyclertablayout;
+package com.handy.tablayout;
 
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
@@ -95,45 +95,45 @@ public class RecyclerTabLayout extends RecyclerView {
     }
 
     private void getAttributes(Context context, AttributeSet attrs, int defStyle) {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.rtl_RecyclerTabLayout,
-                defStyle, R.style.rtl_RecyclerTabLayout);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.handy_rtl_RecyclerTabLayout,
+                defStyle, R.style.handy_rtl_RecyclerTabLayout);
         setIndicatorColor(a.getColor(R.styleable
-                .rtl_RecyclerTabLayout_rtl_tabIndicatorColor, 0));
+                .handy_rtl_RecyclerTabLayout_rtl_tabIndicatorColor, 0));
         setIndicatorHeight(a.getDimensionPixelSize(R.styleable
-                .rtl_RecyclerTabLayout_rtl_tabIndicatorHeight, 0));
+                .handy_rtl_RecyclerTabLayout_rtl_tabIndicatorHeight, 0));
 
-        mTabTextAppearance = a.getResourceId(R.styleable.rtl_RecyclerTabLayout_rtl_tabTextAppearance,
-                R.style.rtl_RecyclerTabLayout_Tab);
+        mTabTextAppearance = a.getResourceId(R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabTextAppearance,
+                R.style.handy_rtl_RecyclerTabLayout_Tab);
 
         mTabPaddingStart = mTabPaddingTop = mTabPaddingEnd = mTabPaddingBottom = a
-                .getDimensionPixelSize(R.styleable.rtl_RecyclerTabLayout_rtl_tabPadding, 0);
+                .getDimensionPixelSize(R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabPadding, 0);
         mTabPaddingStart = a.getDimensionPixelSize(
-                R.styleable.rtl_RecyclerTabLayout_rtl_tabPaddingStart, mTabPaddingStart);
+                R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabPaddingStart, mTabPaddingStart);
         mTabPaddingTop = a.getDimensionPixelSize(
-                R.styleable.rtl_RecyclerTabLayout_rtl_tabPaddingTop, mTabPaddingTop);
+                R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabPaddingTop, mTabPaddingTop);
         mTabPaddingEnd = a.getDimensionPixelSize(
-                R.styleable.rtl_RecyclerTabLayout_rtl_tabPaddingEnd, mTabPaddingEnd);
+                R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabPaddingEnd, mTabPaddingEnd);
         mTabPaddingBottom = a.getDimensionPixelSize(
-                R.styleable.rtl_RecyclerTabLayout_rtl_tabPaddingBottom, mTabPaddingBottom);
+                R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabPaddingBottom, mTabPaddingBottom);
 
-        if (a.hasValue(R.styleable.rtl_RecyclerTabLayout_rtl_tabSelectedTextColor)) {
+        if (a.hasValue(R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabSelectedTextColor)) {
             mTabSelectedTextColor = a
-                    .getColor(R.styleable.rtl_RecyclerTabLayout_rtl_tabSelectedTextColor, 0);
+                    .getColor(R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabSelectedTextColor, 0);
             mTabSelectedTextColorSet = true;
         }
 
         mTabOnScreenLimit = a.getInteger(
-                R.styleable.rtl_RecyclerTabLayout_rtl_tabOnScreenLimit, 0);
+                R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabOnScreenLimit, 0);
         if (mTabOnScreenLimit == 0) {
             mTabMinWidth = a.getDimensionPixelSize(
-                    R.styleable.rtl_RecyclerTabLayout_rtl_tabMinWidth, 0);
+                    R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabMinWidth, 0);
             mTabMaxWidth = a.getDimensionPixelSize(
-                    R.styleable.rtl_RecyclerTabLayout_rtl_tabMaxWidth, 0);
+                    R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabMaxWidth, 0);
         }
 
         mTabBackgroundResId = a
-                .getResourceId(R.styleable.rtl_RecyclerTabLayout_rtl_tabBackground, 0);
-        mScrollEanbled = a.getBoolean(R.styleable.rtl_RecyclerTabLayout_rtl_scrollEnabled, true);
+                .getResourceId(R.styleable.handy_rtl_RecyclerTabLayout_rtl_tabBackground, 0);
+        mScrollEanbled = a.getBoolean(R.styleable.handy_rtl_RecyclerTabLayout_rtl_scrollEnabled, true);
         a.recycle();
     }
 

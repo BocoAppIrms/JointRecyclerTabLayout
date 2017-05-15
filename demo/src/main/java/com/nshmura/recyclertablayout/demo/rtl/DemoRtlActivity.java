@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 
-import com.nshmura.recyclertablayout.RecyclerTabLayout;
+import com.handy.tablayout.RecyclerTabLayout;
 import com.nshmura.recyclertablayout.demo.ColorItem;
 import com.nshmura.recyclertablayout.demo.Demo;
 import com.nshmura.recyclertablayout.demo.DemoColorPagerAdapter;

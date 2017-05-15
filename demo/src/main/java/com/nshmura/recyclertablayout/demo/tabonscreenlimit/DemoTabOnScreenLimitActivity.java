@@ -1,12 +1,5 @@
 package com.nshmura.recyclertablayout.demo.tabonscreenlimit;
 
-import com.nshmura.recyclertablayout.RecyclerTabLayout;
-import com.nshmura.recyclertablayout.demo.ColorItem;
-import com.nshmura.recyclertablayout.demo.Demo;
-import com.nshmura.recyclertablayout.demo.DemoColorPagerAdapter;
-import com.nshmura.recyclertablayout.demo.R;
-import com.nshmura.recyclertablayout.demo.utils.DemoData;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +7,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import com.handy.tablayout.RecyclerTabLayout;
+import com.nshmura.recyclertablayout.demo.ColorItem;
+import com.nshmura.recyclertablayout.demo.Demo;
+import com.nshmura.recyclertablayout.demo.DemoColorPagerAdapter;
+import com.nshmura.recyclertablayout.demo.R;
+import com.nshmura.recyclertablayout.demo.utils.DemoData;
 
 import java.util.Collections;
 import java.util.Comparator;

@@ -1,10 +1,5 @@
 package com.nshmura.recyclertablayout.demo.customview01;
 
-import com.nshmura.recyclertablayout.RecyclerTabLayout;
-import com.nshmura.recyclertablayout.demo.ColorItem;
-import com.nshmura.recyclertablayout.demo.DemoColorPagerAdapter;
-import com.nshmura.recyclertablayout.demo.R;
-
 import android.graphics.Typeface;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.handy.tablayout.RecyclerTabLayout;
+import com.nshmura.recyclertablayout.demo.ColorItem;
+import com.nshmura.recyclertablayout.demo.DemoColorPagerAdapter;
+import com.nshmura.recyclertablayout.demo.R;
 
 /**
  * Created by Shinichi Nishimura on 2015/07/22.
