@@ -351,6 +351,7 @@ public class RecyclerTabLayout extends RecyclerView {
 
     protected static class RecyclerOnScrollListener extends OnScrollListener {
 
+        public int mDx;
         protected RecyclerTabLayout mRecyclerTabLayout;
         protected LinearLayoutManager mLinearLayoutManager;
 
@@ -359,8 +360,6 @@ public class RecyclerTabLayout extends RecyclerView {
             mRecyclerTabLayout = recyclerTabLayout;
             mLinearLayoutManager = linearLayoutManager;
         }
-
-        public int mDx;
 
         @Override
         public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
@@ -453,12 +452,12 @@ public class RecyclerTabLayout extends RecyclerView {
             return mViewPager;
         }
 
-        public void setCurrentIndicatorPosition(int indicatorPosition) {
-            mIndicatorPosition = indicatorPosition;
-        }
-
         public int getCurrentIndicatorPosition() {
             return mIndicatorPosition;
+        }
+
+        public void setCurrentIndicatorPosition(int indicatorPosition) {
+            mIndicatorPosition = indicatorPosition;
         }
     }
 
@@ -597,7 +596,7 @@ public class RecyclerTabLayout extends RecyclerView {
     }
 
 
-    public static class TabTextView extends TextView {
+    public static class TabTextView extends android.support.v7.widget.AppCompatTextView {
 
         public TabTextView(Context context) {
             super(context);
